@@ -69,7 +69,7 @@ export default function App() {
       </div>
       <p className="credit">
         <a
-          href="https://github.com/viktoriia-yash/WeatherApp_Project"
+          href="https://github.com/viktoriia-yash/weather-app-react"
           className="github"
           target="_blank"
           rel="noreferrer"
