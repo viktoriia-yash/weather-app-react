@@ -1,139 +1,114 @@
-.weather-app {
-  position: relative;
-  width: 800px;
-  height: 450px;
-  margin: 20px auto 20px;
-  background-color: #ffffff;
-  border: 3px solid #000000;
-  border-radius: 9% 13% 15% 1% / 1% 1% 2% 6%;
-  box-shadow: 20px 20px #eeeeee;
+body {
+  min-height: 100vh;
+  background-image: url("./back.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  z-index: 1;
-}
-
-.weather-app::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #000000;
-  border-radius: 15% 1% 12% 14% / 2% 1% 4% 4%;
-  transform: translate3d(-50%, -50%, 0) scale(1.01) rotate(0.5deg);
-  z-index: -1;
-}
-
-.top-bar {
-  position: absolute;
-  width: 790px;
-  padding: 7px;
-  background-color: #ffffff;
-  border-color: #000000;
-  border-width: 0px 0px 3px 0px;
-  border-style: solid;
-  z-index: 1;
-}
-
-.top-bar::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #000000;
-  border-radius: 15% 1% 12% 14% / 2% 1% 4% 4%;
-  transform: translate3d(-50%, -50%, 0) scale(1.01) rotate(0.5deg);
-  z-index: -1;
-}
-
-#rectangle {
-  padding: 60px 30px 30px;
   text-transform: uppercase;
+  color: #fff;
 }
 
-#searchThings {
+.weather-container {
+  width: 600px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1 px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 50px;
+}
+
+.searchThings {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.close-button,
-#searchButton,
-#locationButton {
-  padding: 5px 10px 5px;
-  background-color: #b0bec5;
-  border: 3px solid #000000;
+.searchBar,
+.searchButton,
+.locationButton {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
   text-transform: uppercase;
 }
 
-.close-button:hover,
-#searchButton:hover,
-#locationButton:hover {
-  background-color: #e2f1f8;
-  transition: all 200ms ease-in-out;
+.searchButton,
+.locationButton {
+  padding: 5px 10px 5px;
   cursor: pointer;
 }
 
-#searchBar {
+.searchBar {
+  width: 300px;
   padding: 5px;
-  width: 450px;
-  border: 3px solid #000000;
-  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+.searchButton {
+  margin-right: 10px;
 }
 
 h1 {
-  margin: 21.4px auto 0;
+  margin: 20px 0 5px;
 }
 
 h3 {
-  margin: 0 auto 21.4px;
+  margin: 5px 0 20px;
 }
 
-#weather {
+.weatherAllInformationt {
   display: grid;
   grid-template-columns: repeat(2, auto);
   align-items: center;
   margin: 10px auto 10px;
 }
 
-#temperature {
-  text-align: center;
+#temperatureToday {
+  display: flex;
+  justify-content: center;
+}
+
+#icon-pic {
+  width: 100px;
 }
 
 #temperatureNumber {
-  font-size: 60px;
+  font-size: 80px;
 }
 
 #celsius,
 #fahrenheit {
-  color: #eb6e4b;
-  font-weight: 900;
   text-decoration: none;
-  font-size: 15px;
-  padding: 0 auto 30px;
-  display: inline-block;
-  background-color: transparent;
-  border: none;
+  color: #fff;
+  font-weight: 900;
 }
 
-#FahPlusCel {
-  vertical-align: top;
+#celsius:hover,
+#fahrenheit:hover {
+  color: #4cc9f0;
+  transition: all 200ms ease-in-out;
 }
 
-li,
-.weatherAllInformation {
-  font-size: 16px;
+.weatherDesc ul {
   list-style-type: none;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 150%;
+  letter-spacing: 3px;
 }
 
 hr {
-  margin: 5px auto 5px;
-  border: 0.5px solid #000000;
+  border: 1px solid #fff;
 }
 
-.weather-forecast {
+.weatherForecast {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -141,41 +116,13 @@ hr {
   text-align: center;
 }
 
-.day {
-  margin: 5px auto 5px;
-  font-weight: 900;
-}
-
-.icon {
-  margin: 10px auto 10px;
-  font-size: 45px;
-}
-
-.number-max,
-.number-min {
-  display: inline;
-  margin: 5px auto 5px;
-  font-size: 13px;
-  font-weight: 900;
-}
-
-.number-min {
-  color: #a4a4a4;
-}
-
 .credit {
-  text-align: center;
-  font-family: Arial;
   font-size: 13px;
   font-weight: 900;
+  text-align: center;
 }
 
 .github {
   text-decoration: none;
-  color: #eb6e4b;
-}
-
-#icon-w {
-  vertical-align: bottom;
-  width: 75px;
+  color: #4cc9f0;
 }
