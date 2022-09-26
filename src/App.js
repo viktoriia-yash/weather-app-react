@@ -8,7 +8,8 @@ export default function App() {
           <form id="search">
             <input
               type="text"
-              placeholder="Type a city"
+              placeholder="Enter a city"
+              autoFocus="on"
               className="searchBar"
             />
             <input type="button" value="Search" className="searchButton" />
