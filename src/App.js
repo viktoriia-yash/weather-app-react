@@ -42,14 +42,14 @@ export default function App() {
             <span id="temperatureNumber">23</span>
             <span id="FahPlusCel">
               <span id="celsius-un">
-                <a href="#" id="celsius">
+                <a href="/" id="celsius">
                   °C
                 </a>{" "}
               </span>
               <span id="separator">|</span>
               <span id="fahrenheit-un">
                 {" "}
-                <a href="#" id="fahrenheit">
+                <a href="/" id="fahrenheit">
                   °F
                 </a>
               </span>
@@ -80,6 +80,7 @@ export default function App() {
           href="https://github.com/viktoriia-yash/weather-app-react"
           className="github"
           target="_blank"
+          rel="noreferrer"
         >
           Open-source code
         </a>{" "}
