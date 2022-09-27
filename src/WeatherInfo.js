@@ -1,6 +1,7 @@
 import React from "react";
 import ShowDate from "./ShowDate";
 import WeatherIcon from "./WeatherIcon";
+import UnitConversion from "./UnitConversion";
 
 export default function WeatherInfo(props) {
   return (
@@ -21,36 +22,14 @@ export default function WeatherInfo(props) {
           <span id="icon-container">
             <WeatherIcon code={props.data.icon} />
           </span>
-          <span id="temperatureNumber">
-            {Math.round(props.data.temperature)}
-          </span>
-          <span id="FahPlusCel">
-            <span id="celsius-un">
-              <a href="/" id="celsius" rel="noreferrer">
-                °C
-              </a>{" "}
-            </span>
-            <span id="separator">|</span>
-            <span id="fahrenheit-un">
-              {" "}
-              <a href="/" id="fahrenheit" rel="noreferrer">
-                °F
-              </a>
-            </span>
-          </span>
+          <UnitConversion celsius={props.data.temperature} />
         </span>
 
         <span className="weatherDesc">
           <ul>
-            <li>
-              <span id="description">{props.data.description}</span>
-            </li>
-            <li>
-              Humidity: <span id="humidity">{props.data.humidity}</span> %
-            </li>
-            <li>
-              Wind: <span id="wind">{props.data.wind}</span> km/h
-            </li>
+            <li>{props.data.description}</li>
+            <li>Humidity: {props.data.humidity} %</li>
+            <li>Wind: {props.data.wind} km/h</li>
           </ul>
         </span>
       </div>

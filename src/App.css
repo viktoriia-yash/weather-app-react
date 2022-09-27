@@ -7,6 +7,7 @@ body {
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  font-weight: 900;
   color: #fff;
 }
 
@@ -36,20 +37,25 @@ body {
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-
-.searchButton,
-.locationButton {
-  padding: 5px 10px 5px;
-  cursor: pointer;
 }
 
 .searchBar {
   width: 265px;
   padding: 5px;
   margin-right: 30px;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.searchButton,
+.locationButton {
+  padding: 5px 10px 5px;
+  cursor: pointer;
 }
 
 .searchButton {
@@ -88,19 +94,21 @@ h3 {
   margin-right: 5px;
 }
 
+.numberAndUnits {
+  display: flex;
+}
+
 #temperatureNumber {
   font-size: 80px;
 }
 
-#celsius,
-#fahrenheit {
+.unit a {
   text-decoration: none;
-  color: #fff;
-  font-weight: 900;
+  color: #4cc9f0;
 }
 
-#celsius:hover,
-#fahrenheit:hover {
+.unit a:hover {
+  cursor: pointer;
   color: #4cc9f0;
   transition: all 200ms ease-in-out;
 }
@@ -120,7 +128,6 @@ hr {
 .credit {
   font-size: 11px;
   letter-spacing: 1px;
-  font-weight: 900;
   text-align: center;
 }
 
