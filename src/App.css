@@ -81,8 +81,11 @@ h3 {
   justify-content: center;
 }
 
-#icon-pic {
-  width: 100px;
+#icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5px;
 }
 
 #temperatureNumber {
