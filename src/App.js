@@ -63,8 +63,8 @@ export default function App(props) {
           <a
             href="https://github.com/viktoriia-yash/weather-app-react"
             className="github"
+            rel="noopener noreferrer"
             target="_blank"
-            rel="noreferrer"
           >
             Open-source code
           </a>{" "}
