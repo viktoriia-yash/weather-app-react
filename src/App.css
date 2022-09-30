@@ -32,8 +32,7 @@ body {
 }
 
 .searchBar,
-.searchButton,
-.locationButton {
+.searchButton {
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
@@ -43,7 +42,7 @@ body {
 }
 
 .searchBar {
-  width: 265px;
+  width: 465px;
   padding: 5px;
   margin-right: 30px;
 }
@@ -52,14 +51,9 @@ body {
   color: #fff;
 }
 
-.searchButton,
-.locationButton {
+.searchButton {
   padding: 5px 10px 5px;
   cursor: pointer;
-}
-
-.searchButton {
-  margin-right: 10px;
 }
 
 h1,
@@ -126,14 +120,24 @@ hr {
   margin: 8px 0 15px 0;
 }
 
-.weatherForecast {
+.forecastContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.forecastDay {
+  text-align: center;
 }
 
 .forecastIcon {
+  display: flex;
+  justify-content: center;
   margin: 5px 0;
+}
+
+.forecastTemperature {
+  text-align: center;
 }
 
 .maxTempForecast {
