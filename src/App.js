@@ -22,12 +22,6 @@ export default function App(props) {
     });
   }
 
-  function search() {
-    const apiKey = "1766cbbe43ef71cdc8ece5c867ddb581";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
-  }
-
   function handleSubmit(event) {
     event.preventDefault();
     search();
@@ -36,6 +30,12 @@ export default function App(props) {
   function handleCityChange(event) {
     event.preventDefault();
     setCity(event.target.value);
+  }
+
+  function search() {
+    const apiKey = "1766cbbe43ef71cdc8ece5c867ddb581";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   if (weatherData.ready) {
@@ -51,7 +51,7 @@ export default function App(props) {
                 className="searchBar"
                 onChange={handleCityChange}
               />
-              <input type="button" value="Search" className="searchButton" />
+              <input type="submit" value="Search" className="searchButton" />
             </form>
           </div>
           <WeatherInfo data={weatherData} />
