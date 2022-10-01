@@ -3,7 +3,6 @@ I did this project during the " SheCodes React" course. To create it, I used:<br
 <li>HTML, CSS, and React.js</li>
 <li>API from OpenWeatherMap.org</li>
 <li>Netlify for hosting</li>
-<li>Browser tab icon by <a href="https://www.svgrepo.com/">SVG Repo</a></li>
   <li>Background image by <a href="https://unsplash.com/photos/NpF9JLGYfeQ">Cerqueira</a></li>
 </ul>
 The final working result you can find here: <a href="https://effervescent-sable-d2e99c.netlify.app/">Netlify</a> <br/>
