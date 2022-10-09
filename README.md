@@ -1,4 +1,4 @@
-I did this project during the " SheCodes React" course. To create it, I used:<br/>
+I did this project during the "SheCodes React" course. To create it, I used:<br/>
 <ul>
 <li>React.js, HTML5 and CSS3</li>
 <li>API from OpenWeatherMap.org</li>
