@@ -1,6 +1,6 @@
 I did this project during the "SheCodes React" course. To create it, I used:<br/>
 <ul>
-<li>React JS, HTML5 and CSS3.</li>
+<li>React JS, HTML5, and CSS3.</li>
 <li>API from API from <a href="https://openweathermap.org/">OpenWeatherMap</a>.</li>
 <li>Netlify for hosting.</li>
   <li>Background image by <a href="https://unsplash.com/photos/NpF9JLGYfeQ">Cerqueira</a>.</li>
